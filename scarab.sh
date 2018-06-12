@@ -6,7 +6,7 @@ readonly CURRENT_NVM_VERSION="8.11.2"
 readonly DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Print Scarab logo on screen. Such hype.
-sh ./src/logo.sh
+sh $DIR/src/logo.sh
 
 # Init function. Initializes the project for you.
 function init {
