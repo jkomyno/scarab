@@ -68,8 +68,10 @@ case $COMMAND in
 
   # Default output if no match is found
   *)
-  printf $"Usage: $0 { init | help | -v }\n"
-  exit 1
+  printf "Usage: scarab init project-name\n\n"
+  printf $"Available commands: $0 { init | help | -v }\n\n"
+  printf "Developed by Miiitch <wimm@miiit.ch> and released under MIT License \n\n"
+  exit 0
   ;;
 
 esac
