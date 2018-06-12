@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 readonly COMMAND=$1
 readonly PROJECT_NAME=$2
 readonly CURRENT_NVM_VERSION="8.11.2"
