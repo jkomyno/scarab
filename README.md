@@ -58,5 +58,9 @@ You will also get the following `Package.json` file:
 }
 ```
 
+# 👾 About the name "Scarab"
+
+I wanted to call that script "Genesis", but it sounded a little sanctimonious, so I decided to call it like an amazing song from the australian band Northlane, which is the track right after the song "genesis". [Check it out!](https://www.youtube.com/watch?v=2wO6NQz7ylc)
+
 # 📜 License
 [MIT](/LICENSE.md)
