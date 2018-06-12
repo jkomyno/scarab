@@ -29,13 +29,13 @@ function init {
   mkdir src
 
   # Add Travis CI config file
-  cat $DIR/src/.travis.yml > .travis.yml
+  cat $DIR/src/travis.txt > .travis.yml
 
   # Add my standard eslint config file
-  cat $DIR/src/.eslintrc.js > .eslintrc.js
+  cat $DIR/src/eslintrc.txt > .eslintrc.js
 
   # Add gitignore file
-  cat $DIR/src/.gitignore > .gitignore
+  cat $DIR/src/gitignore.txt > .gitignore
 
   # Add Rollup as module bundler. I would like to check if it exisits globally
   # but installation takes less time than checking if it already exists.
