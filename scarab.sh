@@ -1,18 +1,39 @@
 readonly COMMAND=$1
 readonly PROJECT_NAME=$2
 readonly CURRENT_NVM_VERSION="8.11.2"
+readonly DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Print Scarab logo on screen. Such hype.
 sh ./src/logo.sh
 
 # Init function. Initializes the project for you.
 function init {
+  # Make project directory
   mkdir $PROJECT_NAME
   cd ./$PROJECT_NAME
+
+  # Store newly created project directory path
+  readonly PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+  # Initialize yarn project
   yarn init -y
+
+  # Add current nvm version to nvmrc file
   echo $CURRENT_NVM_VERSION >> .nvmrc
+
+  # Create an index file
   touch index.js
+
+  # Add Rollup as module bundler. I would like to check if it exisits globally
+  # but installation takes less time than checking if it already exists.
   yarn global add rollup
+
+  # Add some basic packages I always use
+  yarn add -D jest
+
+  # Run node script to change package.json content.
+  # Pass newly created directory path as argv
+  node $DIR/src/editPackage.js $PROJECT_DIR
 }
 
 
