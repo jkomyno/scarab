@@ -21,8 +21,21 @@ function init {
   # Add current nvm version to nvmrc file
   echo $CURRENT_NVM_VERSION >> .nvmrc
 
-  # Create an index file
+  # Create basic files and directories
   touch index.js
+  echo "# ${PROJECT_NAME}" >> README.md
+  mkdir tests
+  mkdir dist
+  mkdir src
+
+  # Add Travis CI config file
+  cat $DIR/src/.travis.yml > .travis.yml
+
+  # Add my standard eslint config file
+  cat $DIR/src/.eslintrc.js > .eslintrc.js
+
+  # Add gitignore file
+  cat $DIR/src/.gitignore > .gitignore
 
   # Add Rollup as module bundler. I would like to check if it exisits globally
   # but installation takes less time than checking if it already exists.
@@ -36,6 +49,9 @@ function init {
   node $DIR/src/editPackage.js $PROJECT_DIR
 }
 
+function v {
+  echo "0.0.1"
+}
 
 case $COMMAND in
   
@@ -43,6 +59,10 @@ case $COMMAND in
   init)
     init
     ;;
+
+  -v)
+    v
+  ;;
 
   # Default output if no match is found
   *)
