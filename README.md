@@ -1,27 +1,28 @@
 # 🌺 Scarab
 
 Scarab is a simple command line tool that I use to initialize my Node.js projects. <br />
+I usually use Rollup as a module bundler, ESLint as a linter and `nvm` in order to manage my Node.js istances, so I decided to make a script to automatize the initialization process for my projects using my "default" project boilerplate.
 
-# Requirements
+# 🔮 Requirements
 
 - Node.js
 - Yarn
 
 I'll probably improve my script to detect if Node/Yarn are already installed
 
-# Installation
+# 💾 Installation
 
 ```sh
 $ curl -o- https://raw.githubusercontent.com/micheleriva/scarab/master/install.sh | bash
 ```
 
-# Usage
+# ⚔️ Usage
 
 ```sh
 $ scarab init <project-name>
 ```
 
-# What you get
+# 📦 What you get
 
 You will get the following folder structure
 
@@ -57,5 +58,5 @@ You will also get the following `Package.json` file:
 }
 ```
 
-# License
+# 📜 License
 [MIT](/LICENSE.md)
