@@ -2,6 +2,6 @@
 
 git clone https://github.com/micheleriva/scarab.git ~/.scarab
 
-echo "# added by Scarab" >> ~/.bashrc
-echo "export SCARABPATH=~/.scarab" >> ~/.bashrc
-echo "export PATH=$PATH:$SCARABPATH/scarab.sh" >> ~/.bashrc
+echo "# added by Scarab" >> ~/.bash_profile
+echo "export SCARABPATH=~/.scarab" >> ~/.bash_profile
+echo "export PATH=$PATH:$SCARABPATH/scarab.sh" >> ~/.bash_profile
