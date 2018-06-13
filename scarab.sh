@@ -56,8 +56,8 @@ function v {
 }
 
 case $COMMAND in
-  
-  # Invoke init function 
+
+  # Invoke init function
   init)
     init
     ;;
