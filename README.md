@@ -1,5 +1,7 @@
 # 🌺 Scarab
 
+[MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Scarab is a simple command line tool that I use to initialize my Node.js projects. <br />
 I usually use Rollup as a module bundler, ESLint as a linter and `nvm` in order to manage my Node.js istances, so I decided to make a script to automatize the initialization process for my projects using my "default" project boilerplate.
 
