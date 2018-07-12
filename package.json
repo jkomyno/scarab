@@ -1,0 +1,17 @@
+{
+  "name": "@miitch/scarab",
+  "version": "0.5",
+  "description": "Simple CLI tool that I use to initialize my Node.js apps",
+  "main": "index.js",
+  "repository": "https://github.com/micheleriva/scarab.git",
+  "author": "Michele Riva <master@micheleriva.it>",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "scarab": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0"
+  }
+}
